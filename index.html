@@ -1,1 +1,179 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Agente 009 - IA Autónoma Profesional</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#0f0f1e;color:#fff}/* Navigation */.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:rgba(102,126,234,0.1);border-bottom:1px solid rgba(102,126,234,0.2);position:sticky;top:0;z-index:1000}.navbar-brand{font-size:1.5em;font-weight:bold;color:#667eea}.navbar-links{display:flex;gap:30px;align-items:center}.navbar-links a{color:#fff;text-decoration:none;transition:color 0.3s}.navbar-links a:hover{color:#667eea}.cta-btn{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:10px 25px;border-radius:25px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}.cta-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}/* Hero Section */.hero{padding:100px 50px;text-align:center;background:linear-gradient(135deg,rgba(102,126,234,0.1) 0%,rgba(118,75,162,0.1) 100%)}.hero h1{font-size:3.5em;margin-bottom:20px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero p{font-size:1.2em;color:#aaa;margin-bottom:40px;max-width:700px;margin-left:auto;margin-right:auto}.hero-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}.btn{padding:15px 40px;border-radius:25px;text-decoration:none;font-weight:bold;transition:all 0.3s;border:none;cursor:pointer;font-size:1em}.btn-primary{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(102,126,234,0.3)}.btn-secondary{background:transparent;color:#667eea;border:2px solid #667eea}.btn-secondary:hover{background:#667eea;color:#fff}/* Features Section */.features{padding:100px 50px;background:#1a1a2e}.features h2{font-size:2.5em;text-align:center;margin-bottom:60px}.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}.feature-card{background:rgba(102,126,234,0.1);border:1px solid rgba(102,126,234,0.3);padding:40px;border-radius:15px;transition:all 0.3s}.feature-card:hover{background:rgba(102,126,234,0.15);border-color:#667eea;transform:translateY(-5px)}.feature-card h3{color:#667eea;margin-bottom:15px;font-size:1.3em}.feature-card p{color:#aaa;line-height:1.6}/* Pricing Section */.pricing{padding:100px 50px;background:#0f0f1e}.pricing h2{font-size:2.5em;text-align:center;margin-bottom:60px}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}.pricing-card{background:#1a1a2e;border:2px solid rgba(102,126,234,0.2);padding:40px;border-radius:15px;transition:all 0.3s}.pricing-card.featured{border-color:#667eea;background:rgba(102,126,234,0.1);transform:scale(1.05)}.pricing-card h3{color:#667eea;margin-bottom:15px;font-size:1.5em}.pricing-card .price{font-size:2.5em;font-weight:bold;margin-bottom:20px;color:#fff}.pricing-card ul{list-style:none;margin-bottom:30px}.pricing-card ul li{padding:10px 0;border-bottom:1px solid rgba(102,126,234,0.1);color:#aaa}.pricing-card ul li:before{content:"✓";color:#667eea;margin-right:10px}.pricing-card .btn{width:100%;text-align:center}/* Footer */.footer{background:#1a1a2e;padding:50px;text-align:center;border-top:1px solid rgba(102,126,234,0.2)}.footer p{color:#aaa;margin-bottom:10px}/* Chat Interface */.chat-section{padding:50px;background:linear-gradient(135deg,rgba(102,126,234,0.1) 0%,rgba(118,75,162,0.1) 100%);display:none}.chat-section.active{display:block}.chat-container{width:100%;max-width:900px;height:600px;background:#fff;border-radius:20px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3)}.chat-header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:25px;text-align:center}.chat-messages{flex:1;overflow-y:auto;padding:20px;background:#f5f5f5}.message{margin-bottom:15px;display:flex;align-items:flex-start}.message.user{justify-content:flex-end}.message-content{max-width:70%;padding:12px 18px;border-radius:18px;word-wrap:break-word}.message.user .message-content{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff}.message.bot .message-content{background:#fff;color:#333;box-shadow:0 2px 5px rgba(0,0,0,0.1)}.input-container{display:flex;padding:20px;background:#fff;border-top:1px solid #e0e0e0}.input-container input{flex:1;padding:12px;border:2px solid #e0e0e0;border-radius:20px;font-size:14px;outline:none}.input-container input:focus{border-color:#667eea}.input-container button{margin-left:10px;padding:12px 30px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;border:none;border-radius:20px;cursor:pointer;font-weight:bold;transition:all 0.2s}.input-container button:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}@media(max-width:768px){.navbar{padding:15px 20px}.navbar-links{gap:15px}.hero{padding:50px 20px}.hero h1{font-size:2em}.features,.pricing{padding:50px 20px}.features h2,.pricing h2{font-size:1.8em}}</style></head><body><nav class="navbar"><div class="navbar-brand">🕵️ Agente 009</div><div class="navbar-links"><a href="#features">Características</a><a href="#pricing">Precios</a><a href="#" onclick="showChat()">Probar Gratis</a><a href="#" class="cta-btn">Inicio Sesión</a></div></nav><section class="hero"><h1>El Agente IA más Potente del Mercado</h1><p>Automatización inteligente con Computer Use, búsqueda web autónoma y análisis profesional. Potenciado por Gemini 2.0 Flash.</p><div class="hero-buttons"><button class="btn btn-primary" onclick="showChat()">Comenzar Ahora</button><button class="btn btn-secondary">Ver Demostración</button></div></section><section class="features" id="features"><h2>🚀 Capacidades del Agente</h2><div class="features-grid"><div class="feature-card"><h3>🖥️ Computer Use</h3><p>Autonomía completa sobre tu navegador. Puede navegar, hacer clic, escribir y ejecutar tareas web automáticamente.</p></div><div class="feature-card"><h3>🔍 Búsqueda Web</h3><p>Acceso a información en tiempo real de internet. El agente decide autónomamente cuándo buscar datos actualizados.</p></div><div class="feature-card"><h3>📊 Análisis Avanzado</h3><p>Procesa datos complejos, extrae insights y genera reportes profesionales de forma instantánea.</p></div><div class="feature-card"><h3>💾 Memoria Persistente</h3><p>Recuerda todas tus conversaciones. El agente aprende de tus preferencias y se adapta continuamente.</p></div><div class="feature-card"><h3>🧠 Razonamiento Profundo</h3><p>Patrón ReAct implementado: piensa, actúa, observa y reflexiona. Resuelve problemas complejos iterativamente.</p></div><div class="feature-card"><h3>🔗 Integraciones</h3><p>LinkedIn scraping, análisis de empresas, extracción de datos y más. Todo conectado en un agente unificado.</p></div></div></section><section class="pricing" id="pricing"><h2>💰 Planes de Precios</h2><div class="pricing-grid"><div class="pricing-card"><h3>Gratuito</h3><p class="price">€0<span style="font-size:0.4em">/mes</span></p><ul><li>Chat básico con Gemini 2.0</li><li>100 búsquedas web/mes</li><li>Conversaciones guardadas</li><li>Acceso comunitario</li></ul><button class="btn btn-secondary">Comenzar</button></div><div class="pricing-card featured"><h3>Profesional</h3><p class="price">€9<span style="font-size:0.4em">/mes</span></p><ul><li>Todo lo del plan gratuito</li><li>Búsqueda ilimitada</li><li>Computer Use: 50 automatizaciones/mes</li><li>LinkedIn scraping (100 perfiles)</li><li>Soporte prioritario</li></ul><button class="btn btn-primary">Suscribirse Ahora</button></div><div class="pricing-card"><h3>Empresa</h3><p class="price">€49<span style="font-size:0.4em">/mes</span></p><ul><li>Todo lo del plan profesional</li><li>Computer Use ilimitado</li><li>LinkedIn ilimitado</li><li>API personalizada</li><li>Soporte dedicado 24/7</li></ul><button class="btn btn-secondary">Contactar Ventas</button></div></div></section><section class="chat-section" id="chatSection"><div class="chat-container"><div class="chat-header"><h2>Agente 009 - Chat en Vivo</h2></div><div class="chat-messages" id="chatMessages"><div style="text-align:center;color:#667eea;padding:20px"><p>Conectando con el agente...</p></div></div><div class="input-container"><input type="text" id="userInput" placeholder="Escribe tu pregunta..."><button onclick="sendMessage()">Enviar</button></div></div></section><section class="footer"><p>&copy; 2026 Agente 009 - IA Autónoma Profesional</p><p>Desarrollado con Gemini 2.0 Flash | Google Cloud | Vercel</p></section><script>const API_BASE_URL='http://80.225.187.59:5670';function showChat(){document.getElementById('chatSection').classList.add('active');document.querySelector('html').scrollTop=document.getElementById('chatSection').offsetTop}function sendMessage(){const input=document.getElementById('userInput');const msg=input.value.trim();if(!msg)return;const chatMessages=document.getElementById('chatMessages');const userDiv=document.createElement('div');userDiv.className='message user';const userContent=document.createElement('div');userContent.className='message-content';userContent.textContent=msg;userDiv.appendChild(userContent);chatMessages.appendChild(userDiv);input.value='';const botDiv=document.createElement('div');botDiv.className='message bot';const botContent=document.createElement('div');botContent.className='message-content';botContent.textContent='Procesando...';botDiv.appendChild(botContent);chatMessages.appendChild(botDiv);chatMessages.scrollTop=chatMessages.scrollHeight;fetch(`${API_BASE_URL}/api/chat`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:msg,conversation_id:'web-'+Date.now()})}).then(r=>r.json()).then(data=>{botContent.textContent=data.response||'Error procesando respuesta'}).catch(e=>{botContent.textContent='❌ Error conectando con el servidor'})}</script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente 009 - Asistente de Automatización</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        #chat-container::-webkit-scrollbar { width: 6px; }
+        #chat-container::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen flex flex-col items-center p-4 font-sans">
+    <div class="w-full max-w-2xl flex justify-between items-center mb-6 glass p-4 rounded-2xl">
+        <div class="flex items-center gap-3">
+            <div id="status-dot" class="w-3 h-3 rounded-full bg-red-500"></div>
+            <h1 class="text-xl font-bold tracking-tight text-white">Agente <span class="text-blue-500">009</span></h1>
+        </div>
+        <p id="status-text" class="text-sm text-slate-400 font-medium italic">Desconectado</p>
+    </div>
+    
+    <div id="chat-container" class="w-full max-w-2xl flex-1 glass rounded-3xl p-6 mb-6 overflow-y-auto flex flex-col gap-4">
+        <div class="bg-slate-800/50 p-4 rounded-2xl self-start max-w-[80%] border border-slate-700">
+            <p class="text-sm">Hola Gabriel. Sistema de automatización web listo. ¿En qué puedo ayudarte hoy?</p>
+        </div>
+    </div>
+    
+    <p id="server-message" class="mb-4 text-blue-400 text-sm font-medium h-4 pulse"></p>
+    
+    <div class="w-full max-w-2xl glass rounded-3xl p-6 flex items-center gap-4">
+        <button id="mic-btn" class="w-16 h-16 rounded-full bg-blue-600 hover:bg-blue-500 flex items-center justify-center transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed group" disabled>
+            <i data-lucide="mic" class="text-white group-hover:scale-110 transition-transform"></i>
+        </button>
+        <div class="flex-1">
+            <p class="text-xs text-slate-500 mb-1 uppercase tracking-widest font-bold">Estado del Micrófono</p>
+            <p id="mic-status" class="text-lg font-semibold text-slate-300">Esperando conexión...</p>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        
+        const WS_URL = "ws://80.225.186.76:5670/ws/voice";
+        const CHUNK_SIZE = 4096;
+        
+        let socket;
+        let audioContext;
+        let mediaStream;
+        let processor;
+        let isRecording = false;
+        let reconnectTimeout;
+        
+        const micBtn = document.getElementById('mic-btn');
+        const statusDot = document.getElementById('status-dot');
+        const statusText = document.getElementById('status-text');
+        const micStatus = document.getElementById('mic-status');
+        const serverMessage = document.getElementById('server-message');
+        const chatContainer = document.getElementById('chat-container');
+        
+        function connectWS() {
+            socket = new WebSocket(WS_URL);
+            
+            socket.onopen = () => {
+                statusDot.className = "w-3 h-3 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.6)]";
+                statusText.innerText = "En línea";
+                micStatus.innerText = "Listo para grabar";
+                micBtn.disabled = false;
+                console.log("Conectado a Agente 009");
+            };
+            
+            socket.onmessage = async (event) => {
+                const response = JSON.parse(event.data);
+                
+                if (response.type === 'audio') {
+                    playBase64Audio(response.data);
+                    addChatMessage("Agente 009", "Respuesta de voz generada", false);
+                } else if (response.type === 'status') {
+                    serverMessage.innerText = response.message;
+                    if (response.message.includes("Generando")) serverMessage.classList.add("text-green-400");
+                }
+            };
+            
+            socket.onclose = () => {
+                statusDot.className = "w-3 h-3 rounded-full bg-red-500";
+                statusText.innerText = "Desconectado";
+                micBtn.disabled = true;
+                micStatus.innerText = "Reconectando...";
+                clearTimeout(reconnectTimeout);
+                reconnectTimeout = setTimeout(connectWS, 3000);
+            };
+        }
+        
+        async function startRecording() {
+            try {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+                mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                const source = audioContext.createMediaStreamSource(mediaStream);
+                processor = audioContext.createScriptProcessor(2048, 1, 1);
+                
+                source.connect(processor);
+                processor.connect(audioContext.destination);
+                
+                processor.onaudioprocess = (e) => {
+                    if (!isRecording) return;
+                    
+                    const inputData = e.inputBuffer.getChannelData(0);
+                    const pcmData = new Int16Array(inputData.length);
+                    
+                    for (let i = 0; i < inputData.length; i++) {
+                        pcmData[i] = Math.max(-1, Math.min(1, inputData[i])) * 0x7FFF;
+                    }
+                    
+                    if (socket.readyState === WebSocket.OPEN) {
+                        const base64Data = btoa(String.fromCharCode(...new Uint8Array(pcmData.buffer)));
+                        socket.send(JSON.stringify({ type: "audio", data: base64Data }));
+                    }
+                };
+                
+                isRecording = true;
+                micBtn.classList.replace('bg-blue-600', 'bg-red-600');
+                micStatus.innerText = "Grabando... Habla ahora";
+                addChatMessage("Tú", "Mensaje de voz enviado...", true);
+            } catch (err) {
+                console.error("Error micrófono:", err);
+                alert("No se pudo acceder al micrófono");
+            }
+        }
+        
+        function stopRecording() {
+            isRecording = false;
+            if (processor) processor.disconnect();
+            if (mediaStream) mediaStream.getTracks().forEach(t => t.stop());
+            if (audioContext) audioContext.close();
+            
+            micBtn.classList.replace('bg-red-600', 'bg-blue-600');
+            micStatus.innerText = "Procesando respuesta...";
+        }
+        
+        function playBase64Audio(base64) {
+            const binaryString = atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) bytes[i] = binaryString.charCodeAt(i);
+            
+            const blob = new Blob([bytes.buffer], { type: 'audio/mpeg' });
+            const url = URL.createObjectURL(blob);
+            const audio = new Audio(url);
+            audio.play();
+        }
+        
+        function addChatMessage(user, text, isUser) {
+            const div = document.createElement('div');
+            div.className = `p-4 rounded-2xl max-w-[80%] border ${isUser ? 'bg-blue-900/30 border-blue-800 self-end text-right' : 'bg-slate-800/50 border-slate-700 self-start'}`;
+            div.innerHTML = `<p class="text-xs text-slate-400 mb-1">${user}</p><p class="text-sm">${text}</p>`;
+            chatContainer.appendChild(div);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        micBtn.addEventListener('mousedown', startRecording);
+        micBtn.addEventListener('mouseup', stopRecording);
+        micBtn.addEventListener('mouseleave', stopRecording);
+        
+        connectWS();
+    </script>
+</body>
+</html>
