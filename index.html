@@ -53,12 +53,10 @@
     <script>
         lucide.createIcons();
         
-const WS_URL = "ws://80.225.186.76:5670/ws/voice";        
         let socket;
         let audioContext;
         let mediaStream;
-        let processor;
-        let isRecording = false;
+const WS_URL = "wss://agente009.80.225.186.76.nip.io/ws/voice";        let isRecording = false;
         let reconnectTimeout;
         
         const micBtn = document.getElementById('mic-btn');
